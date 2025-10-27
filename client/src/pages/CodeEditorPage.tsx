@@ -98,7 +98,7 @@ export default function CodeEditorPage() {
   return (
     <div className="flex flex-col h-screen bg-background">
       <Header
-        title="Live Code Editor"
+        title="JoltCode"
         onSave={handleSave}
         onReset={() => setShowResetDialog(true)}
         onRun={handleRun}

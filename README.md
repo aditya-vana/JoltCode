@@ -1,4 +1,4 @@
-# Live Code Editor Application
+# JoltCode Editor Application
 
 ## Overview
 
