@@ -61,8 +61,10 @@ For full-stack support, connect the backend API using **Express.js** or a server
 
 ## Acknowledgements
 This project was developed independently as a learning and portfolio project.  
-Special thanks to the open-source community behind **Monaco Editor** and front-end UI libraries that made this project possible.
+Special thanks to the open-source community behind **Monaco Editor** and front-end UI libraries that made this project possible.  
 
-##Author
-Developed by Aditya Vana
+---
+
+## Author
+Developed by Aditya Vana  
 Built with HTML, CSS, and JavaScript, powered by Monaco for a seamless coding experience.
