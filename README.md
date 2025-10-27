@@ -1,79 +1,68 @@
-# JoltCode – Live Online Code Editor
+# JoltCode – Online Code Editor
 
 ## Overview
+**JoltCode** is a browser-based live code editor that allows users to write, edit, and preview **HTML**, **CSS**, and **JavaScript** code in real time.  
+It is designed to provide a fast, minimal, and responsive environment for experimenting with front-end code, similar to platforms like CodePen or JSFiddle.
 
-JoltCode is a web-based live code editor that allows users to write, edit, and preview HTML, CSS, and JavaScript in real time directly in the browser.  
-It is inspired by platforms like CodePen and JSFiddle but built from scratch with a minimal, distraction-free interface and smooth live preview functionality.
-
-The editor provides three separate panels for HTML, CSS, and JavaScript, along with a real-time output preview.  
-It is lightweight, responsive, and designed for quick experimentation and learning.
+This project was developed primarily using **HTML**, **CSS**, and **JavaScript**, while leveraging a few open-source tools and frameworks to enhance user experience and performance.
 
 ---
 
 ## Features
-
-- Separate editors for HTML, CSS, and JavaScript  
-- Real-time preview that updates instantly as you type  
-- Adjustable panels for a personalized layout  
-- Syntax highlighting powered by Monaco Editor (used in VS Code)  
-- Options to save, reset, and share code snippets  
-- Minimal and responsive design with light and dark mode  
-- Runs entirely in the browser without additional setup
+- Separate panels for HTML, CSS, and JavaScript with real-time live preview.  
+- Clean and minimal UI for distraction-free coding.  
+- Adjustable and resizable editor panels for better workspace customization.  
+- Syntax highlighting and intelligent code suggestions powered by **Monaco Editor**.  
+- Auto-refresh on code changes with instant visual feedback.  
+- Support for light and dark themes.  
 
 ---
 
-## Technologies Used
+## Project Structure
+The project is organized into three main parts:
 
-This project is primarily built using HTML, CSS, and JavaScript, with support from modern frameworks and tools for performance and UI enhancements.
-
-- **Monaco Editor** – for syntax highlighting and intelligent editing  
-- **Vite** – for fast development and bundling  
-- **Tailwind CSS** – for responsive, utility-first styling  
-- **React (light usage)** – for managing UI components and real-time updates  
-
-The focus of JoltCode is simplicity, using core web technologies to bring live code editing directly to the browser.
+| Folder | Description |
+|---------|-------------|
+| **client/** | Contains the front-end code (HTML, CSS, JS, and UI components). |
+| **server/** | Handles backend API routes and data management. |
+| **shared/** | Defines shared utilities and schema models used across the app. |
 
 ---
 
-## System Highlights
-
-### Frontend
-- Three code panels (HTML, CSS, JavaScript) with a live preview  
-- Clean and responsive layout adaptable to all screen sizes  
-- Debounced updates for smooth and efficient rendering  
-
-### Backend (Optional)
-- Basic REST API endpoints for saving and retrieving snippets  
-- Configurable for database integration such as PostgreSQL for persistent storage  
+## How It Works
+1. Users can write HTML, CSS, and JavaScript code in separate panels.  
+2. The code is instantly rendered in a live preview window.  
+3. Monaco Editor provides code completion, syntax highlighting, and formatting.  
+4. The workspace layout adapts to any screen size for responsive editing.  
 
 ---
 
-## Getting Started
+## Technical Overview
+- **Frontend:** Built with HTML, CSS, and JavaScript, enhanced with a modern UI framework.  
+- **Editor Engine:** Uses **Monaco Editor**, the same code editor used in VS Code, for an improved coding experience.  
+- **Preview System:** Injects user-written HTML, CSS, and JS into an isolated iframe for safe, live execution.  
+- **Backend (Optional):** A simple Express.js server setup for saving and loading snippets (can be extended with a database).  
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/aditya-vana/My.Slice.of.Life.git
-2. Navigate to the project directory
-bash
-Copy code
-cd My.Slice.of.Life
-3. Install dependencies
-bash
-Copy code
-npm install
-4. Run the development server
-bash
-Copy code
-npm run dev
-Visit http://localhost:5173 in your browser to use the JoltCode editor.
+---
 
-Future Improvements
-Add user authentication for saving personal snippets
+## Future Enhancements
+- User authentication and personalized snippet saving.  
+- Integration with GitHub Gists for sharing code.  
+- Multi-theme support and customizable color schemes.  
+- Collaboration mode for real-time pair programming.  
 
-Enable online sharing and collaboration features
+---
 
-Support custom themes and layout presets
+## Deployment
+The app can be deployed easily using **Vercel**, **Netlify**, or any static hosting platform.  
+For full-stack support, connect the backend API using **Express.js** or a serverless function.
 
-Author
+---
+
+## Acknowledgements
+This project was developed independently as a learning and portfolio project.  
+Special thanks to the open-source community behind **Monaco Editor** and front-end UI libraries that made this project possible.
+
+##Author
 Developed by Aditya Vana
 Built with HTML, CSS, and JavaScript, powered by Monaco for a seamless coding experience.
